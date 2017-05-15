@@ -74,7 +74,7 @@ button:focus { outline: 0 }
 /* .bg2:after { width: 100%; height: 100%; position: absolute; content: ''; top: 0; left: 0; content: ''; background: rgba(0, 0, 0, 0.3); } */
 .bg3 { width: 100vw; display: block; background-image: url(../img/pagebg4.jpg); }
 .wrapper { width: 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; margin: 0 auto; text-align: center; }
-.coming-people { width: 50%; max-width: 300px; margin: 0 auto; }
+.coming-people { width: 50%; max-width: 300px; margin: 0 auto 15px; }
 .coming-people img { }
 .title { display: inline-block; margin: 0 auto; width: 70%; }
 
@@ -199,6 +199,7 @@ button:focus { outline: 0 }
 .img2.auto-animate.close img { -webkit-transform: scale(1); transform: scale(1) }
 
 /* menu */
+.menu-bg{position: fixed;left:0;top:0;right:0;bottom:0;}
 .menu-main, .menu-main__bg { width: 100%; height: 100% }
 .menu-main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: #20201d; position: fixed; left: 0; top: 0; z-index: 2 }
 .menu-main--hidden { pointer-events: none }
@@ -251,14 +252,51 @@ button:focus { outline: 0 }
 .load-screen { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; z-index: 111; }
 .load-screen-fade-enter.load-screen-fade-enter-active, .load-screen-fade-leave { opacity: 1 }
 .load-screen-fade-enter { opacity: 0 }
-.swiper-container0 { width: 38%;margin: 0 auto;padding-top: 100px;box-sizing: border-box; }
-.swiper-container0 .swiper-pagination .swiper-pagination-bullet { width: 15px; height: 4px; border-radius: 0px; }
-.swiper-container0 .swiper-slide{visibility:hidden}
-.swiper-container0 .swiper-slide.swiper-slide-active{visibility:visible;}
-.swiper-container0 .swiper-container-horizontal>.swiper-pagination-bullets,.swiper-container0 .swiper-pagination-custom,.swiper-container0 .swiper-pagination-fraction{bottom:40px;}
+.swiper-container-v { width: 100%;height:50%;margin: 0 auto;box-sizing: border-box; }
+.swiper-container-v .swiper-pagination .swiper-pagination-bullet { width: 15px; height: 4px; border-radius: 0px; }
+.swiper-container-v .swiper-slide{visibility:hidden}
+.swiper-container-v .swiper-slide.swiper-slide-active{visibility:visible;}
+.swiper-container-v .swiper-container-horizontal>.swiper-container-v .swiper-pagination-bullets,.swiper-container-v .swiper-pagination-custom,..swiper-container-v .swiper-pagination-fraction{bottom:40px;}
 /*---slide show skin---*/
 .swiper-container { width: 100%; height: 100%; }
 .swiper-slide { background-position: center; background-size: cover; }
 
 /* mmobile phone */
-@media (max-width:740px) { }
+@media (max-width:740px) {
+	body,html{background:#000;}
+.header{padding:20px;}
+.logo{width:120px;}
+.manu{display:none;}
+.swiper-container-v{width:80%;height:80vh;margin-top:15vh;padding:0 30px;box-sizing:border-box;}
+/* .swiper-wrapper{width:60%;height:80vh;} */
+.coming-people{width:100%;max-width:100%;}
+.title{width:100%;}
+/* .header__controls{position: relative} */
+.header__controls .share-box{position: absolute;right:20px;top:20%;}
+.wrapper2 .slide-img,.slide-content1,.slide-content2,.wrapper2-1 .slide-img{width:100%;float:none;}
+.wrapper2 .slide-img{margin-bottom:5vh;}
+.slide1-txt{padding:25px 0 38px 30px;}
+.under-us{margin-left:54%;}
+.slide-content2{padding-left:0;}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{width:25px;height:26px;background-size:50px 52px;}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{width:25px;height:26px;background:url(../img/jt-sprite.png) -25px -26px no-repeat;background-size:50px 52px;}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{right:5vw;}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{left:5vw;}
+.swiper-title >p{font-size:22px;}
+.wrapper3{width:90vw;box-sizing:border-box;}
+.wp3-txt, .wp4-txt{width:96%;}
+.wp3-txt, .wp4-txt{font-size:16px;}
+.wp3-txt .txt2{font-size:24px;}
+.wp3-txt:after, .wp4-txt:after{left:85%;}
+.wp4-txt>span{padding-left:18px;}
+.wp4-txt .txt2{font-size:18px;}
+.footer{padding:38px 5% 30px;}
+.contact{margin-top:0;border-top:none;padding:50px 0;width:86vw;margin:0 auto;}
+.contact .txt{width:100%;margin-bottom:20px;display:inline-block;text-align: center;}
+.contact form{float:none;width:100vw;}
+.input-name, .input-tel{width:100vw;margin:0 auto;margin-bottom:20px;box-sizing:border-box;}
+.form-check{margin:5px 0 30px 0;}
+.submit-btn{clear:both;float:none;margin:0 auto;text-align:center;text-indent:-4em;}
+.gener{float:none;text-align:center;font-size:24px;margin:0 auto 30px;}
+.copyright{padding-top:3em;}
+}
