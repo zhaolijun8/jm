@@ -7,16 +7,16 @@
     <meta name=“keywords” content=""/>
     <meta name="description" content=""/>
     <title >君马</title >
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="css/animate-custom.css">
     <!-- <script src="js/en.json"></script> -->
 </head>
 <body>
 	<div class="cot-body">
 	<!-- 页面正在加载时状态 -->
-		<div class="load-screen load-screen-fade-leave load-screen-fade-leave-active">
-			<div class="load-screen__logo">
+		<div class="load-screen load-screen-fade-leave load-screen-fade-leave-active" style="display:none;">
+			<div class="load-screen__lgogo">
 				<span class="icon-logo"><img src="img/logo.png" width="100%" alt=""></span>
 			</div>
 		</div>
@@ -25,8 +25,10 @@
 				<img src="img/logo.png" width="100%" alt="">
 			</a>
 			<div class="header__controls">
-				<a href="#" class="icon-sina"></a>
-				<a href="#" class="icon-weixin"></a>
+				<!-- <div class="share-box">
+					<a href="#" class="icon-sina"></a>
+					<a href="#" class="icon-weixin"></a>
+				</div> -->
 				<div class="language-switch header__language" role="navigation">
 					<button class="language-switch__lang">en</button>
 					<!-- <span class="language-switch__lang language-switch__lang--selected">中文</span> -->
@@ -54,17 +56,8 @@
 				<div class="page section1">
 					<div class="hero">
 						<div class="bg bg1"></div>
-					<!-- 	<div class="wrapper">
-							<div class="coming-people">
-								<img src="img/s1-people.png" width="100%" alt="">
-							</div>
-							<div class="title">
-								<h1><em>T</em> IS COMING</h1>
-								<img src="img/t_is.png" width="100%" alt="">
-							</div>
-						</div> -->
 						 <!-- Swiper -->
-					    <div class="swiper-container0">
+					    <div class="swiper-container-v">
 					        <div class="swiper-wrapper">
 					            <div class="swiper-slide">
 					            	<div class="wrapper">
@@ -98,7 +91,7 @@
 					            </div>
 					        </div>
 					        <!-- Add Pagination -->
-					        <div class="swiper-pagination swiper-pagination-white"></div>
+					        <div class="swiper-pagination-v swiper-pagination-white"></div>
 					    </div>
 					</div>
 				</div>
@@ -123,6 +116,13 @@
 						</div>
 					</div>
 					<div class="wrapper2-1">
+						<div class="slide-img">
+							<div class="img-R image-component">
+								<div class="img">
+									<img srcset sizes="(min-width: 740px 65vw, 100vw)" src="img/img2.jpg" alt="">
+								</div>
+							</div>
+						</div>
 						<div class="slide-content2">
 							<div class="slide2-txt">
 								<span class="txt1">车型</span>
@@ -130,13 +130,6 @@
 								<span class="txt3">我的个性定制,我选择!</span>
 							</div>
 							<a href="#" class="under-us">了解我们</a>
-						</div>
-						<div class="slide-img">
-							<div class="img-R image-component">
-								<div class="img">
-									<img srcset sizes="(min-width: 740px 65vw, 100vw)" src="img/img2.jpg" alt="">
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -237,10 +230,13 @@
 		</div>
 
 		<!-- 导航 -->
-		<!-- <nav class="menu-main" style="opacity: 1; display: flex;">
+		<nav class="menu-main" style="opacity: 1; display: flex;display:none;">
+			<div class="menu-bg">
+				<img src="img/pagebg5.jpg" alt="">
+			</div>
 			<div class="menu-main__wrapper">
 				<div class="menu-main__item" style="transform: translate3d(0px, 0%, 0px); opacity: 1;">
-					<a class="menu-main__item-link" href="/brand">
+					<a class="menu-main__item-link" href="#">
 						<div class="menu-main__item-label-mask">
 							<h4 class="text open menu-main__item-label text--xsmall">品牌</h4>
 						</div>
@@ -250,7 +246,7 @@
 					</a>
 				</div>
 				<div class="menu-main__item" style="transform: translate3d(0px, 0%, 0px); opacity: 1;">
-					<a class="menu-main__item-link" href="/cars">
+					<a class="menu-main__item-link" href="#">
 						<div class="menu-main__item-label-mask">
 							<h4 class="text open menu-main__item-label text--xsmall">汽车</h4>
 						</div>
@@ -260,7 +256,7 @@
 					</a>
 				</div>
 				<div class="menu-main__item" style="transform: translate3d(0px, 0%, 0px); opacity: 1;">
-					<a class="menu-main__item-link" href="/colab">
+					<a class="menu-main__item-link" href="#">
 						<div class="menu-main__item-label-mask">
 							<h4 class="text open menu-main__item-label text--xsmall">Co:Lab</h4>
 						</div>
@@ -270,7 +266,7 @@
 					</a>
 				</div>
 				<div class="menu-main__item" style="transform: translate3d(0px, 0%, 0px); opacity: 1;">
-					<a class="menu-main__item-link" href="/news-events">
+					<a class="menu-main__item-link" href="#">
 						<div class="menu-main__item-label-mask">
 							<h4 class="text open menu-main__item-label text--xsmall">新闻及活动</h4>
 						</div>
@@ -280,7 +276,7 @@
 					</a>
 				</div>
 				<div class="menu-main__item" style="transform: translate3d(0px, 0%, 0px); opacity: 1;">
-					<a class="menu-main__item-link" href="/careers">
+					<a class="menu-main__item-link" href="#">
 						<div class="menu-main__item-label-mask">
 							<h4 class="text open menu-main__item-label text--xsmall">加入我们</h4>
 						</div>
@@ -290,7 +286,7 @@
 					</a>
 				</div>
 				<div class="menu-main__item" style="transform: translate3d(0px, 0%, 0px); opacity: 1;">
-					<a class="menu-main__item-link" href="/contact">
+					<a class="menu-main__item-link" href="#">
 					<div class="menu-main__item-label-mask">
 						<h4 class="text open menu-main__item-label text--xsmall">联系我们</h4>
 					</div>
@@ -300,18 +296,18 @@
 					</a>
 				</div>
 			</div>
-		</nav> -->
+		</nav>
 		<footer class="footer">
+			<div class="gener">
+				<span>品牌分享</span>
+				<i class="f-weibo"></i>
+				<i class="f-weixin"></i>
+			</div>			
 			<div class="link-a">
 				<a href="#">最新速报</a>
 				<a href="#">售后服务</a>
 				<a href="#">合作共赢</a>
 				<a href="#">金融计算器</a>
-			</div>
-			<div class="gener">
-				<span>品牌分享</span>
-				<i class="f-weibo"></i>
-				<i class="f-weixin"></i>
 			</div>
 			<div class="clear"></div>
 			<div class="copyright">
@@ -328,11 +324,11 @@
 			$('.swiper-container0 .swiper-slide,.swiper-container0').css({
 				height: $(window).height(),
 			})
-			setTimeout(function() {
-				$(".load-screen").hide()
-				$(".swiper-container").fadeIn();
-				$(".arr").removeClass('hide')
-			}, 2000)
+			// setTimeout(function() {
+			// 	$(".load-screen").hide()
+			// 	$(".swiper-container").fadeIn();
+			// 	$(".arr").removeClass('hide')
+			// }, 2000)
 			var swiper = new Swiper('.swiper-container', {
 		        pagination: '.swiper-pagination',
 		        nextButton: '.swiper-button-next',
@@ -342,13 +338,15 @@
 		        spaceBetween: 30,
 		        loop: true
 		    })
-		     var swiper = new Swiper('.swiper-container0', {
-		        pagination: '.swiper-pagination',
-		        paginationClickable: '.swiper-pagination',
-		        nextButton: '.swiper-button-next',
-		        prevButton: '.swiper-button-prev',
+		     var swiper = new Swiper('.swiper-container-v', {
+		        pagination: '.swiper-pagination-v',
+		        paginationClickable:true,
+		        // nextButton: '.swiper-button-next0',
+		        // prevButton: '.swiper-button-prev0',
 		        spaceBetween: 30,
-		        effect: 'fade'
+		        effect: 'fade',
+		        autoplay : 4000,
+		        loop: true
 		    });
 		});
 	</script>
