@@ -15,7 +15,7 @@
 <body>
 	<div class="cot-body">
 	<!-- 页面正在加载时状态 -->
-		<div class="load-screen load-screen-fade-leave load-screen-fade-leave-active" style="display:none;">
+		<div class="load-screen load-screen-fade-leave load-screen-fade-leave-active">
 			<div class="load-screen__lgogo">
 				<span class="icon-logo"><img src="img/logo.png" width="100%" alt=""></span>
 			</div>
@@ -25,10 +25,10 @@
 				<img src="img/logo.png" width="100%" alt="">
 			</a>
 			<div class="header__controls">
-				<!-- <div class="share-box">
+				<div class="share-box">
 					<a href="#" class="icon-sina"></a>
 					<a href="#" class="icon-weixin"></a>
-				</div> -->
+				</div>
 				<div class="language-switch header__language" role="navigation">
 					<button class="language-switch__lang">en</button>
 					<!-- <span class="language-switch__lang language-switch__lang--selected">中文</span> -->
@@ -331,6 +331,7 @@
 					$(this).addClass('trigger--close');
 					$("body,html").addClass('no-scroll');
 					$(".menu-main").css({ "opacity": "1", "display": "flex" }).removeClass('menu-main--hidden');
+					$(".manu").hide();
 					setTimeout(function(){
 						$(".menu-main__item").addClass('animate');
 					},100);
@@ -339,17 +340,18 @@
 					$(this).removeClass('trigger--close');
 					$("body,html").removeClass('no-scroll');
 					$(".menu-main").css({ "opacity": "0", "display": "none" }).addClass('menu-main--hidden');
+					$(".manu").show();
 					setTimeout(function(){
 						$(".menu-main__item").removeClass('animate');
 					},100);
 					
 				}
 			})
-			// setTimeout(function() {
-			// 	$(".load-screen").hide()
-			// 	$(".swiper-container").fadeIn();
-			// 	$(".arr").removeClass('hide')
-			// }, 2000)
+			setTimeout(function() {
+				$(".load-screen").hide()
+				$(".swiper-container").fadeIn();
+				$(".arr").removeClass('hide')
+			}, 2000)
 			var swiper = new Swiper('.swiper-container', {
 		        pagination: '.swiper-pagination',
 		        nextButton: '.swiper-button-next',
