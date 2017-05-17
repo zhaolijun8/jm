@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/animate-custom.css">
     <!-- <script src="js/en.json"></script> -->
 </head>
-<body>
+<body class="no-scroll">
 	<div class="cot-body">
 	<!-- 页面正在加载时状态 -->
 		<div class="load-screen load-screen-fade-leave load-screen-fade-leave-active">
@@ -62,7 +62,7 @@
 					            <div class="swiper-slide">
 					            	<div class="wrapper">
 										<div class="coming-people">
-											<img src="img/s1-people.png" width="100%" alt="">
+											<img src="img/s1-people.png" alt="">
 										</div>
 										<div class="title">
 											<img src="img/t_is.png" width="100%" alt="">
@@ -72,7 +72,7 @@
 					            <div class="swiper-slide">					            	
 					            	<div class="wrapper">
 										<div class="coming-people">
-											<img src="img/img2.jpg" width="100%" alt="">
+											<img src="img/img2.jpg" alt="">
 										</div>
 										<div class="title">
 											<img src="img/t_is.png" width="100%" alt="">
@@ -82,7 +82,7 @@
 					            <div class="swiper-slide">					            	
 					            	<div class="wrapper">
 										<div class="coming-people">
-											<img src="img/s1-people.png" width="100%" alt="">
+											<img src="img/s1-people.png" alt="">
 										</div>
 										<div class="title">
 											<img src="img/t_is.png" width="100%" alt="">
@@ -185,10 +185,10 @@
 								<a href="#" class="under-us">深层了解</a>
 							</div>
 						</div>
-						<div class="line3">
+						<!-- <div class="line3">
 							<span class="line-top"></span>
 							<span class="line-bottom"></span>
-						</div>
+						</div> -->
 						<div class="slide-R">
 							<div class="wp4-txt">
 								<span class="txt1">招募令</span>
@@ -348,9 +348,10 @@
 				}
 			})
 			setTimeout(function() {
-				$(".load-screen").hide()
+				$(".load-screen").hide();
 				$(".swiper-container").fadeIn();
-				$(".arr").removeClass('hide')
+				$(".arr").removeClass('hide');
+				$("body,html").removeClass("no-scroll");
 			}, 2000)
 			var swiper = new Swiper('.swiper-container', {
 		        pagination: '.swiper-pagination',
@@ -364,8 +365,6 @@
 		     var swiper = new Swiper('.swiper-container-v', {
 		        pagination: '.swiper-pagination-v',
 		        paginationClickable:true,
-		        // nextButton: '.swiper-button-next0',
-		        // prevButton: '.swiper-button-prev0',
 		        spaceBetween: 30,
 		        effect: 'fade',
 		        autoplay : 4000,
