@@ -291,7 +291,7 @@ body.no-scroll, html.no-scroll{overflow:hidden;}
 	.share-box{display: none;}
 .header{padding:20px;}
 .logo{width:120px;}
-.manu{display:none;}
+.manu{display:none;z-index:-1;}
 /* .header__controls{position: relative} */
 .header__controls .share-box{position: absolute;right:20px;top:20%;}
 .wrapper2 .slide-img,.slide-content1,.slide-content2,.wrapper2-1 .slide-img{width:100%;float:none;}
