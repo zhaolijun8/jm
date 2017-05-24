@@ -20,28 +20,39 @@
 				<span class="icon-logo"><img src="img/logo.png" width="100%" alt=""></span>
 			</div>
 		</div>
-		<header class="header" style="transform: translate3d(0px, 0px, 0px);">
-			<a href="/" class="logo">
-				<img src="img/logo.png" width="100%" alt="">
-			</a>
-			<div class="header__controls">
-				<div class="share-box">
-					<a href="#" class="icon-sina"></a>
-					<a href="#" class="icon-weixin"></a>
+		<header class="header-box" >
+			<div class="header">
+				<a href="/" class="logo">
+					<img src="img/logo.png" width="100%" alt="">
+				</a>
+				<div class="header_list">
+					<!-- <a href="#" class="on">首页</a> -->
+					<a href="#">hi! I’m T</a>				
+					<a href="#">梦想<span class="par">Partner</span></a>
+					<a href="#">车型Show</a>
+					<!-- <a href="#">Boom!爆点</a> -->
+					<!-- <a href="#">入手攻略</a> -->
+					<!-- <a href="#">Care U</a> -->
 				</div>
-				<div class="language-switch header__language" role="navigation">
-					<button class="language-switch__lang">en</button>
-					<!-- <span class="language-switch__lang language-switch__lang--selected">中文</span> -->
+				<div class="header__controls">
+					<div class="share-box">
+						<a href="#" class="icon-sina"></a>
+						<a href="#" class="icon-weixin"></a>
+					</div>
+					<div class="language-switch header__language" role="navigation">
+						<button class="language-switch__lang">en</button>
+						<!-- <span class="language-switch__lang language-switch__lang--selected">中文</span> -->
+					</div>
+					<!-- <a class="header__user" href="/my-account">
+						<span class="icon-profile"></span>
+					</a> -->
+					<button class="trigger">
+						<span class="trigger__line">
+							<span class="trigger__line__top"></span>
+							<span class="trigger__line__bottom"></span>
+						</span>
+					</button>
 				</div>
-				<!-- <a class="header__user" href="/my-account">
-					<span class="icon-profile"></span>
-				</a> -->
-				<button class="trigger">
-					<span class="trigger__line">
-						<span class="trigger__line__top"></span>
-						<span class="trigger__line__bottom"></span>
-					</span>
-				</button>
 			</div>
 		</header>
 		<!-- 右侧浮层 -->
@@ -62,30 +73,33 @@
 					            <div class="swiper-slide">
 					            	<div class="wrapper">
 										<div class="coming-people">
-											<img src="img/s1-people.png" alt="">
+											<img src="img/s1-people1.png" width="100%" alt="">
 										</div>
 										<div class="title">
-											<img src="img/t_is.png" width="100%" alt="">
+											<!-- <img src="img/t_is.png" width="100%" alt=""> -->
+											「IS COMING 」
 										</div>
 									</div>
 					            </div>
 					            <div class="swiper-slide">					            	
 					            	<div class="wrapper">
 										<div class="coming-people">
-											<img src="img/img2.jpg" alt="">
+											<img src="img/s1-people1.png" width="100%" alt="">
 										</div>
 										<div class="title">
-											<img src="img/t_is.png" width="100%" alt="">
+											<!-- <img src="img/t_is.png" width="100%" alt=""> -->
+											「IS COMING 」
 										</div>
 									</div>
 					            </div>
 					            <div class="swiper-slide">					            	
 					            	<div class="wrapper">
 										<div class="coming-people">
-											<img src="img/s1-people.png" alt="">
+											<img src="img/s1-people1.png" width="100%" alt="">
 										</div>
 										<div class="title">
-											<img src="img/t_is.png" width="100%" alt="">
+											<!-- <img src="img/t_is.png" width="100%" alt=""> -->
+											「IS COMING 」
 										</div>
 									</div>
 					            </div>
@@ -100,16 +114,16 @@
 					<div class="wrapper2">
 						<div class="slide-img slideImg">
 							<div class="img-L image-component">
-								<div class="img">
+								<div class="img openbig">
 									<img srcset sizes="(min-width: 740px 65vw, 100vw)" src="img/img1.jpg" alt="">
 								</div>
 							</div>
 						</div>
 						<div class="slide-content1">
 							<div class="slide1-txt">
-								<span class="txt1">品牌</span>
-								<span class="txt2">年轻不拘一格</span>
-								<span class="txt3">我的张扬个性，由自己创造！</span>
+								<span class="txt1">What is <em class="ft">T</em> ?</span>
+								<span class="txt2">颠覆传统 探索个性</span>
+								<!-- <span class="txt3">我的张扬个性，由自己创造！</span> -->
 							</div>
 
 							<a href="#" class="under-us">了解我们</a>
@@ -118,16 +132,15 @@
 					<div class="wrapper2-1">
 						<div class="slide-img">
 							<div class="img-R image-component">
-								<div class="img">
+								<div class="img openbig">
 									<img srcset sizes="(min-width: 740px 65vw, 100vw)" src="img/img2.jpg" alt="">
 								</div>
 							</div>
 						</div>
 						<div class="slide-content2">
 							<div class="slide2-txt">
-								<span class="txt1">车型</span>
-								<span class="txt2">我型我素</span>
-								<span class="txt3">我的个性定制,我选择!</span>
+								<span class="txt1">车型<em class="ft">秀</em></span>
+								<span class="txt2">SUV集结号<em class="ft">赞</em>!</span>
 							</div>
 							<a href="#" class="under-us">了解我们</a>
 						</div>
@@ -138,58 +151,52 @@
 				        <div class="swiper-wrapper">
 				            <div class="swiper-slide" style="background-image:url(img/pagebg3.jpg)">
 				            	<div class="swiper-title">
-				            		<p class="name">「 君马4款车型,年末即将全球上市 」</p>
-									<p class="time">2017 5.3</p>
-				            		<div class="link-href"><a href="#">新闻&活动</a></div>
-				            	</div>
-				            </div>
-				            <div class="swiper-slide" style="background-image:url(img/pagebg3.jpg)">	
-				            	<div class="swiper-title">
-				            		<p class="name">「 君马4款车型,年末即将全球上市 」</p>
-									<p class="time">2017 5.3</p>
-				            		<div class="link-href"><a href="#">新闻&活动</a></div>
-				            	</div>
-				            </div>
-				            <div class="swiper-slide" style="background-image:url(img/pagebg3.jpg)">	
-				            	<div class="swiper-title">
-				            		<p class="name">「 君马4款车型,年末即将全球上市 」</p>
-									<p class="time">2017 5.3</p>
-				            		<div class="link-href"><a href="#">新闻&活动</a></div>
-				            	</div>
-				            </div>				            
-				            <div class="swiper-slide" style="background-image:url(img/pagebg3.jpg)">	
-				            	<div class="swiper-title">
-				            		<p class="name">「 君马4款车型,年末即将全球上市 」</p>
-									<p class="time">2017 5.3</p>
-				            		<div class="link-href"><a href="#">新闻&活动</a></div>
+				            		<p class="name"><span class="kh-icon3">T</span>品牌即将全球首发</p>
+									<!-- <p class="time">2017 5.3</p> -->
+				            		<!-- <div class="link-href"><a href="#">新闻&活动</a></div> -->
 				            	</div>
 				            </div>
 				        </div>
 				        <!-- Add Pagination -->
-				        <div class="swiper-pagination"></div>
+				        <!-- <div class="swiper-pagination"></div> -->
 				        <!-- Add Arrows -->
-				        <div class="swiper-button-next"></div>
-				        <div class="swiper-button-prev"></div>
+				        <!-- <div class="swiper-button-next"></div> -->
+				        <!-- <div class="swiper-button-prev"></div> -->
 				    </div>
+				</div>
+				<div class="page section5">
+					<div class="bg bg5"></div>
+					<div class="wrapper5">
+						<div class="img">
+							<div class="openbig">
+								<img src="img/img5.jpg" width="100%" alt="">
+							</div>
+						</div>
+						<div class="wp5-txt">
+							<span class="txt1">Join T's family</span>
+							<span class="txt2">梦想合伙人</span>
+							<a href="#" class="under-us">深层了解</a>
+						</div>
+					</div>
 				</div>
 				<div class="page section3">
 					<div class="bg bg3"></div>
 					<div class="wrapper3">
-						<div class="slide-l">
+						<div class="slide3">
 							<div class="img">
-								<img src="img/img3.jpg" srcset sizes="" width="100%" alt="">
+								<div class="openbig">
+									<img src="img/img4.jpg" srcset sizes="" width="100%" alt="">
+								</div>
 							</div>
-							<div class="wp3-txt">
-								<span class="txt1">我们在寻找</span>
-								<span class="txt2">梦想合伙人</span>
-								<a href="#" class="under-us">深层了解</a>
+							<div class="wp3-box">
+								<div class="wp3-txt">
+									<span class="txt1">招募<em class="ft">令</em></span>
+									<span class="txt2">突破平静 敢为波澜</span>
+								</div>							
+								<a href="#" class="under-us">算我一个</a>
 							</div>
 						</div>
-						<!-- <div class="line3">
-							<span class="line-top"></span>
-							<span class="line-bottom"></span>
-						</div> -->
-						<div class="slide-R">
+						<!-- <div class="slide-R">
 							<div class="wp4-txt">
 								<span class="txt1">招募令</span>
 								<span class="txt2">get你的新技能</span>
@@ -198,161 +205,137 @@
 							<div class="img">
 								<img src="img/img4.jpg" srcset sizes="" width="100%" alt="">
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="page section4">
-					<div class="contact">
-						<span class="txt">联系我们</span>
-						<form>
-							<div class="input-name">
-								<input type="text" placeholder="留下你的名字" value="" id="name">
-							</div>
-
-							<div class="input-tel">
-								<input type="text" placeholder="留下你的手机号或邮箱" value="" id="tel">
-							</div>
-							<div class="form-check">
-								<input type="checkbox" name="optIn" value="false" id="optIn">
-								<label for="optIn">
-									<i class="icon-checkmark"></i>
-									<span>请通过电子邮件或短信向我传送有关众泰的最新消息及动态。<br/>
-									我们承诺将严格保障您的个人信息。请仔细阅读我们的隐私政策。</span>
-								</label>
-							</div>
-							<div class="submit-btn">
-								<i class="mit-icon"></i>提交
-							</div>
-						</form>
+						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	
+	<div class="footer-box">			
+		<div class="page section4">
+			<div class="contact">
+				<span class="txt">联系我们</span>
+				<form>
+					<div class="input-name">
+						<input type="text" placeholder="留下你的名字" value="" id="name">
+					</div>
 
-		<!-- 导航 -->
-		<nav class="menu-main menu-main--hidden" style="opacity: 0; display: none;">
-			<div class="menu-bg">
-				<img src="img/pagebg5.jpg" alt="">
-			</div>
-			<div class="menu-main__wrapper">
-				<div class="menu-main__item">
-					<a class="menu-main__item-link" href="#">
-						<div class="menu-main__item-label-mask">
-							<h4 class="text open menu-main__item-label text--xsmall">品牌</h4>
-						</div>
-						<div class="menu-main__item-heading-mask">
-							<h3 class="text open menu-main__item-heading text--large">我们的洒脱自由</h3>
-						</div>
-					</a>
-				</div>
-				<div class="menu-main__item">
-					<a class="menu-main__item-link" href="#">
-						<div class="menu-main__item-label-mask">
-							<h4 class="text open menu-main__item-label text--xsmall">汽车</h4>
-						</div>
-						<div class="menu-main__item-heading-mask">
-							<h3 class="text open menu-main__item-heading text--large">征途，时星辰的大海</h3>
-						</div>
-					</a>
-				</div>
-				<div class="menu-main__item">
-					<a class="menu-main__item-link" href="#">
-						<div class="menu-main__item-label-mask">
-							<h4 class="text open menu-main__item-label text--xsmall">Co:Lab</h4>
-						</div>
-						<div class="menu-main__item-heading-mask">
-							<h3 class="text open menu-main__item-heading text--large">引领未来</h3>
-						</div>
-					</a>
-				</div>
-				<div class="menu-main__item">
-					<a class="menu-main__item-link" href="#">
-						<div class="menu-main__item-label-mask">
-							<h4 class="text open menu-main__item-label text--xsmall">新闻及活动</h4>
-						</div>
-						<div class="menu-main__item-heading-mask">
-							<h3 class="text open menu-main__item-heading text--large">让趣味燃爆热点</h3>
-						</div>
-					</a>
-				</div>
-				<div class="menu-main__item">
-					<a class="menu-main__item-link" href="#">
-						<div class="menu-main__item-label-mask">
-							<h4 class="text open menu-main__item-label text--xsmall">加入我们</h4>
-						</div>
-						<div class="menu-main__item-heading-mask">
-							<h3 class="text open menu-main__item-heading text--large">轻松拥车</h3>
-						</div>
-					</a>
-				</div>
-				<div class="menu-main__item">
-					<a class="menu-main__item-link" href="#">
-					<div class="menu-main__item-label-mask">
-						<h4 class="text open menu-main__item-label text--xsmall">联系我们</h4>
+					<div class="input-tel">
+						<input type="text" placeholder="留下你的手机号或邮箱" value="" id="tel">
 					</div>
-					<div class="menu-main__item-heading-mask">
-						<h3 class="text open menu-main__item-heading text--large">以梦为马 不负韶华</h3>
+					<div class="form-check">
+						<input type="checkbox" name="optIn" value="false" id="optIn">
+						<label for="optIn">
+							<i class="icon-checkmark"></i>
+							<span>请通过电子邮件或短信向我传送有关众泰的最新消息及动态。<br/>
+							我们承诺将严格保障您的个人信息。请仔细阅读我们的隐私政策。</span>
+						</label>
 					</div>
-					</a>
+					<div class="submit-btn">
+						<i class="mit-icon"></i>提交
+					</div>
+				</form>
+				<div class="gener-box">	
+					<div class="link-a">
+						<a href="#">hi! I’m T</a>
+						<a href="#">梦想合伙人</a>
+						<a href="#">车型Show</a>  
+					</div>
+					<div class="gener">
+						<span>品牌分享</span>
+						<i class="f-weibo"></i>
+						<i class="f-weixin"></i>
+					</div>		
 				</div>
+
 			</div>
-		</nav>
+		</div>
 		<footer class="footer">
-			<div class="gener">
-				<span>品牌分享</span>
-				<i class="f-weibo"></i>
-				<i class="f-weixin"></i>
-			</div>			
-			<div class="link-a">
-				<a href="#">最新速报</a>
-				<a href="#">售后服务</a>
-				<a href="#">合作共赢</a>
-				<a href="#">金融计算器</a>
-			</div>
-			<div class="clear"></div>
 			<div class="copyright">
-				<p>© Copyright 2012-2016 君马版权&nbsp;&nbsp;京公网安备 11010802020043号</p>
+				<p>© Copyright 2012-2016 君马版权    京公网安备 11010802020043号</p>
+				<p>地址：中国重庆两江新区南山产业园 电话稍等 电话：123342111</p>
 			</div>
 		</footer>
+
 	</div>
+
+	<!-- 导航 -->
+	<nav class="menu-main menu-main--hidden" style="opacity: 0; display: none;">
+		<div class="menu-bg">
+			<img src="img/pagebg5.jpg" alt="">
+		</div>
+		<div class="menu-main__wrapper">
+			<div class="menu-main__item">
+				<a class="menu-main__item-link" href="#">
+					<div class="menu-main__item-label-mask">
+						<h4 class="text open menu-main__item-label text--xsmall">品牌</h4>
+					</div>
+					<div class="menu-main__item-heading-mask">
+						<h3 class="text open menu-main__item-heading text--large">我们的洒脱自由</h3>
+					</div>
+				</a>
+			</div>
+			<div class="menu-main__item">
+				<a class="menu-main__item-link" href="#">
+					<div class="menu-main__item-label-mask">
+						<h4 class="text open menu-main__item-label text--xsmall">汽车</h4>
+					</div>
+					<div class="menu-main__item-heading-mask">
+						<h3 class="text open menu-main__item-heading text--large">征途，时星辰的大海</h3>
+					</div>
+				</a>
+			</div>
+			<div class="menu-main__item">
+				<a class="menu-main__item-link" href="#">
+					<div class="menu-main__item-label-mask">
+						<h4 class="text open menu-main__item-label text--xsmall">Co:Lab</h4>
+					</div>
+					<div class="menu-main__item-heading-mask">
+						<h3 class="text open menu-main__item-heading text--large">引领未来</h3>
+					</div>
+				</a>
+			</div>
+			<div class="menu-main__item">
+				<a class="menu-main__item-link" href="#">
+					<div class="menu-main__item-label-mask">
+						<h4 class="text open menu-main__item-label text--xsmall">新闻及活动</h4>
+					</div>
+					<div class="menu-main__item-heading-mask">
+						<h3 class="text open menu-main__item-heading text--large">让趣味燃爆热点</h3>
+					</div>
+				</a>
+			</div>
+			<div class="menu-main__item">
+				<a class="menu-main__item-link" href="#">
+					<div class="menu-main__item-label-mask">
+						<h4 class="text open menu-main__item-label text--xsmall">加入我们</h4>
+					</div>
+					<div class="menu-main__item-heading-mask">
+						<h3 class="text open menu-main__item-heading text--large">轻松拥车</h3>
+					</div>
+				</a>
+			</div>
+			<div class="menu-main__item">
+				<a class="menu-main__item-link" href="#">
+				<div class="menu-main__item-label-mask">
+					<h4 class="text open menu-main__item-label text--xsmall">联系我们</h4>
+				</div>
+				<div class="menu-main__item-heading-mask">
+					<h3 class="text open menu-main__item-heading text--large">以梦为马 不负韶华</h3>
+				</div>
+				</a>
+			</div>
+		</div>
+	</nav>
 	<script src="js/jquery.js"></script>
-	<!-- <script src="js/lynk.js"></script> -->
 	<script src="js/swiper.min.js"></script>
 	<script src="js/index.js"></script>
 	<script>
 		$(function(){
-			var status = !0;
 			$('.swiper-container0 .swiper-slide,.swiper-container0').css({
 				height: $(window).height(),
 			});
-			$(".trigger").on("click",function(){
-				if(status){
-					status = !1;
-					$(this).addClass('trigger--close');
-					$("body,html").addClass('no-scroll');
-					$(".menu-main").css({ "opacity": "1", "display": "flex" }).removeClass('menu-main--hidden');
-					$(".manu").hide();
-					setTimeout(function(){
-						$(".menu-main__item").addClass('animate');
-					},100);
-				}else{
-					status = !0;
-					$(this).removeClass('trigger--close');
-					$("body,html").removeClass('no-scroll');
-					$(".menu-main").css({ "opacity": "0", "display": "none" }).addClass('menu-main--hidden');
-					$(".manu").show();
-					setTimeout(function(){
-						$(".menu-main__item").removeClass('animate');
-					},100);
-					
-				}
-			})
-			setTimeout(function() {
-				$(".load-screen").hide();
-				$(".swiper-container").fadeIn();
-				$(".arr").removeClass('hide');
-				$("body,html").removeClass("no-scroll");
-			}, 2000)
 			var swiper = new Swiper('.swiper-container', {
 		        pagination: '.swiper-pagination',
 		        nextButton: '.swiper-button-next',
@@ -362,7 +345,7 @@
 		        spaceBetween: 30,
 		        loop: true
 		    })
-		     var swiper = new Swiper('.swiper-container-v', {
+		    var swiper = new Swiper('.swiper-container-v', {
 		        pagination: '.swiper-pagination-v',
 		        paginationClickable:true,
 		        spaceBetween: 30,
